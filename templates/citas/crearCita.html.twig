@@ -1,0 +1,25 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Nueva cita{% endblock %}
+
+{% block body %}
+    <br><br>
+
+    <div class="ui grid">
+
+        <div class="twelve wide column centered column">
+
+            <h1 class="ui header">Crear una nueva Cita</h1>
+
+            {{ form_start(form, { 'attr': {'class': 'ui form'} }) }}
+            <div class="field">
+            {{ form_widget(form) }}
+            </div>
+            {{ form_end(form) }}
+
+        </div>
+
+    </div>
+
+{% endblock %}
