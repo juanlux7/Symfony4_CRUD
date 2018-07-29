@@ -1,6 +1,6 @@
 # Symfony4_CRUD
 
-NOTA: este proyecto esta en una version inicial (branch 'version_inicial') y por lo tanto queda funionalidad por añadir.
+NOTA: este proyecto esta en una version inicial (branch 'version_inicial') y por lo tanto queda funionalidad por añadir. Cuando añada mejoras iré haciendolo de forma progresiva en otras branches. 
 
 # Pequeño CRUD en Symfony 4 y Semantic UI
 
@@ -8,17 +8,17 @@ NOTA: este proyecto esta en una version inicial (branch 'version_inicial') y por
 
 # Explicación del proyecto
 
-En este proyecto es un simple CRUD realizado en Symfony 4, con el fin de dar los primeros pasos con el framework PHP. Este proyecto consiste en una web que despliega una serie de citas famosas a lo largo de la historia, con la posibilidad de crear nuevas. El principal objetivo era abordar algunos de los conceptos principales del framework:
+En este proyecto es un simple CRUD realizado en Symfony 4, con el fin de dar los primeros pasos con el framework PHP. Este proyecto consiste en una web que despliega una serie de citas famosas a lo largo de la historia, con la posibilidad de crear nuevas. El principal objetivo era abordar algunos de los conceptos principales del framework tales como:
 
 - Entities
 - Controllers
 - Routes Annotations
-- conexion a base de datos SQL
-- Instalación de dependencias via Composer
+- conexión a base de datos SQL
+- Instalación de dependencias via Composer (servidor de desarrollo, ORM, form etc)
 - uso de formularios
-- Twig template system
+- Twig template system (includes, extends, if, for)
 - Entity manager
-- migraciones
+- migraciones desde el CLI
 
 # Implementacion de Semantic UI como framework HTML
 
@@ -31,3 +31,5 @@ Para los estilos básicos de la web, he decidido implementar Semantic UI, con el
 A continuacion muestro imagenes del proyecto, aun por completar, pero con la primera versión básica del proyecto
 
 ![alt text](https://user-images.githubusercontent.com/40801686/43368453-96c753f0-935d-11e8-9c30-314021b5061e.png)
+
+
