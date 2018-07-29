@@ -1,5 +1,7 @@
 # Symfony4_CRUD
 
+NOTA: este proyecto esta en una version inicial (branch 'version_inicial') y por lo tanto queda funionalidad por añadir.
+
 # Pequeño CRUD en Symfony 4 y Semantic UI
 
 ![alt text](https://user-images.githubusercontent.com/40801686/43368455-9a78193a-935d-11e8-888d-403836f65610.png)
