@@ -3,10 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Cita;
+use Symfony\Component\HttpFoundation\Response;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 use Symfony\Component\HttpFoundation\Request;
 
@@ -17,8 +17,8 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 class CitasController extends Controller
 {
     /**
-     * @Route("/", name="index")
-     * @Method({"GET"})
+     * @Route(path="/", methods={"GET"})
+     * 
      */
     public function index()
     {
@@ -31,8 +31,8 @@ class CitasController extends Controller
     }
 
      /**
-     * @Route("/crearCita", name="crear")
-     * @Method({"GET", "POST"})
+     * @Route(path="/crearCita", methods={"GET", "POST"})
+     * 
      */
 
      public function crearCita(Request $request){
@@ -68,4 +68,23 @@ class CitasController extends Controller
             'form' => $form->createView()
           ));
      }
+
+     /**
+     * @Route(path="/borrarCita/{id}", methods={"DELETE"})
+     * 
+     */
+
+      public function borrar(Request $request, $id){
+
+        $cita = $this->getDoctrine()->getRepository(Cita::class)->find($id);
+       
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->remove($cita);
+        $entityManager->flush();
+        $respuesta = new Response();
+
+        $respuesta->send();
+
+      }
+
 }

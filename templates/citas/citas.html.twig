@@ -7,6 +7,7 @@
 
     {% if citas %}
 
+<div id="citas">
     {% for cita in citas %}
 
 <div class="ui raised very padded text container segment">
@@ -15,12 +16,13 @@
   <p> creada el: {{ cita.createdAt }}</p>
   <p>
   <a href="#" class="ui yellow basic button">Modificar</a>
-  <a href="#" class="ui negative basic button">Eliminar</a>
+  <a href="#" class="ui negative basic button" data-id={{ cita.id }}>Eliminar</a>
   </p>
 
 </div>
 
     {% endfor %}
+</div>
 
     {% else %}
 
@@ -33,5 +35,11 @@
 
     {% endif %}
 
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script src="/js/main.js"></script>
 
 {% endblock %}
